@@ -21,12 +21,14 @@ app.use(morgan("dev"));
 app.use(helmet());
 
 // CORS setup
-const corsOptions = {
-  origin: "https://lynxline-client.onrender.com",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: "https://lynxline-client.onrender.com",
+    credentials: true,
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+  })
+);
+
 
 // Route handlers
 app.use("/api/v1/auth", authRoute);
