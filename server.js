@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(helmet());
 const allowedOrigins = [
-  "https://lynxline-client.onrender.com/",
+  "https://lynxline-client.onrender.com",
   "http://localhost:3000/",
 ];
 app.use(cors({ origin: allowedOrigins }));
