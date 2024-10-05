@@ -1,0 +1,279 @@
+.Admin-Category {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem 0 1rem 3rem;
+}
+
+.category-title {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-new-category button {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: black;
+  border-radius: 0.35rem;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.admin-new-category button:hover {
+  background: rgba(0, 0, 0, 0.837);
+}
+.admin-category-form {
+  width: 80%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.admin-product-form {
+  flex-direction: column;
+}
+.admin-product-form-1 {
+  display: flex;
+  gap: 1rem;
+  width: 90%;
+}
+.admin-category-input {
+  width: 40%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: #d3d3d3;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.admin-product-textarea {
+  margin: 0;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  outline: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.admin-product-input {
+  width: 60%;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.admin-product-form-5 {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.admin-product-short-input {
+  width: 30%;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.admin-img-upload-btn {
+  margin: auto;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  width: 60%;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+.upload-hidden {
+  display: none;
+}
+.admin-product-form-3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 60%;
+}
+.admin-product-preview {
+  margin-top: 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.admin-product-preview img {
+  max-width: 100%;
+  height: 15rem;
+}
+
+.create-category-btn {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  justify-content: center;
+  color: #fff;
+  background: black;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.create-category-btn:hover {
+  background: rgba(0, 0, 0, 0.837);
+}
+.admin-product-submit {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.admin-product-submit-btn {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+.custom-table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 0.5rem;
+  text-align: left;
+}
+.custom-table th:nth-child(2) {
+  text-align: center;
+}
+
+.custom-table th {
+  color: #333;
+  background-color: #d3d3d3;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.admin-category-action {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.admin-category-action button {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.delete-category-btn {
+  background-color: #ee3232;
+}
+.delete-category-btn:hover {
+  background-color: #d32f2f;
+}
+.edit-category-btn {
+  background-color: #478fe5;
+}
+.edit-category-btn:hover {
+  background-color: #2e75c5;
+}
+.admin-update-product-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.view-products-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.view-products-top-add-category {
+  display: flex;
+  gap: 0.5rem;
+}
+@media (max-width: 770px) {
+  .Admin-Category {
+    padding: 1rem;
+  }
+  .category-title,
+  .admin-product-textarea,
+  .admin-category-form,
+  .custom-table,
+  .admin-product-input,
+  .admin-product-preview,
+  .admin-category-input,
+  .admin-product-category-select,
+  .admin-product-form-5,
+  .admin-product-submit {
+    width: 100%;
+  }
+  .admin-img-upload-btn {
+    width: 90%;
+  }
+  .admin-product-form-1 {
+    flex-direction: column;
+  }
+}
+
+.View-Product {
+  width: 100%;
+  height: 100vh;
+}
+.view-products-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.admin-products-section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 1rem;
+}
+.admin-product-card {
+  background: white;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination-btn.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.pagination-btn:hover:not(.active) {
+  background-color: #e9ecef;
+}
+
+.asp-container {
+  align-items: center;
+}
+.asp-detail-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.asp-detail-btn button {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

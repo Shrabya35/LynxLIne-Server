@@ -1,0 +1,104 @@
+:root {
+  --white: white;
+  --black: #000;
+  --theme1: #343c69;
+  --btn: #e94948;
+}
+
+html,
+body,
+#root,
+.Auth {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Auth {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.auth-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.auth-left {
+  flex: 1;
+  position: sticky;
+  left: 0;
+}
+
+.auth-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.auth-right {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-content {
+  padding: 20px;
+}
+
+.auth-img {
+  margin-top: 2rem;
+  width: 4rem;
+}
+.auth-image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.auth-image-small-text {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.auth-image-text h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.auth-image-text-description {
+  font-size: 1rem;
+  margin: 0;
+}
+@media (max-width: 765px) {
+  .auth-left {
+    display: none;
+  }
+  .auth-logo {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+  .auth-form {
+    padding-top: 5.5rem;
+    position: fixed;
+  }
+}
