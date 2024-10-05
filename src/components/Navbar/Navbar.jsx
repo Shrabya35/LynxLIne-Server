@@ -20,6 +20,8 @@ const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
   const inputRef = useRef(null);
+  const baseUrl =
+    process.env.REACT_APP_API_BASE_URL || "http://localhost:9080/api/v1";
 
   const userDetailsString = useMemo(
     () =>
@@ -43,7 +45,7 @@ const Navbar = () => {
     const fetchShoppingBag = async () => {
       try {
         const response = await axios.get(
-          `http://192.168.1.10:9080/api/v1/user/shoppingBag/${userEmail}`
+          `${baseUrl}/user/shoppingBag/${userEmail}`
         );
         const shoppingBagData = response.data;
         setShoppingBag(shoppingBagData.shoppingBag);
